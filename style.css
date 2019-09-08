@@ -196,6 +196,7 @@ h2 {
     padding-bottom: 55px;
     margin: 0;
     margin-top: 30px;
+    font-weight: 400;
 }
 
 .athlets_collaboration_wrapper {
@@ -255,8 +256,8 @@ h2 {
 }
 
 .main_img {
-    max-width: 100%;
     position: relative;
+    width: 100%;
 }
 
 .img_wrapper {
@@ -377,7 +378,11 @@ footer .logo {
     margin-top: 82px;
 }
 
-@media (min-width:641px) {
+/*****************/
+/****Планшеты*****/
+/*****************/
+
+@media (min-width:641px) and (max-width: 960px) {
     
     .logo {
         padding-top: 39px;
@@ -439,7 +444,7 @@ footer .logo {
         margin-left: -171px;
     }
     
-    .athlets_wrapper h2 {
+    .athlets_wrapper h2, .players_wrapper h2 {
         margin-top: 86px;
         padding-top: 0;
     }
@@ -449,7 +454,7 @@ footer .logo {
         padding-left: 293px;
     }
     
-    .athlets_connection_wrapper .header_number {
+    .athlets_connection_wrapper .header_number, .players_connection_wrapper .header_number {
         margin-top: 61px;
     }   
 
@@ -457,6 +462,7 @@ footer .logo {
         font-size: 16px;
         line-height: 28px;
         text-align: left;
+        padding: 0;
         padding-bottom: 37px;
         margin: 0;
         margin-top: 30px;
@@ -465,6 +471,135 @@ footer .logo {
     .athlets_collaboration_wrapper .header_number, .athlets_growth_wrapper .header_number {
         padding-top: 41px;
     }
+    
+    .players_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .players_img_wrapper {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .player_img {
+        margin-top: 40px;
+    }
+    
+    .players_growth_wrapper {
+        width: 100%;
+    }
+    
+    .players_connection_wrapper, .players_collaboration_wrapper, .players_growth_wrapper  {
+        padding-right: 355px;
+    }
+    
+    .players_wrapper .text {
+        padding-bottom: 37px;
+        margin-top: 32px;
+    }
+    
+    .players_collaboration_wrapper .header_number, .players_growth_wrapper .header_number {
+        padding-top: 41px;
+    }
+    
+    .center_span {
+        display: flex;
+        background-color: #5e42b0;
+        width: 115px;
+        height: 115px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 32px;
+        bottom: -35px;
+    }
+    
+    .number {
+    font-size: 18px;
+    }
+    
+    .main_text {
+        margin-top: 90px;
+    }
+    
+    .find_contact .main_text, .work_it .main_text  {
+        margin-top: 81px;
+    }
+    
+    .be_active h2, .find_contact h2, .work_it h2 {
+        padding-top: 0;
+    }
+    
+    main h2 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+    
+    main .text {
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 37px;
+        padding-bottom: 105px;
+    }
+    
+    .logo_background {
+        display: flex;
+        width: 130px;
+        height: 136px;
+        z-index: 1;
+        position: relative;
+        background: linear-gradient(to top, #50329c 0%, #5e3db3 51%, #7751db 100%);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 99px;
+        border-radius: 15px;
+    }
+
+    .logo_footer {
+        width: 104px;
+        height: 87px;
+        margin: auto;
+        fill: #f5f6f7;
+    }
+   
+    footer h2 {
+        font-size: 80px;
+        line-height: 80px;
+        text-align: center;
+    }
+    
+    .footer_span {
+        font-size: 36px;
+        line-height: 36px;
+        margin-top: 29px;
+        text-align: center;
+    }
+    
+    footer .logo {
+        margin-bottom: 10px;
+        margin-top: 23px;
+    }
+    
+    .link_1st_line {
+        font-weight: 100;
+    }
+    
+    footer {
+    background-image: url("img/game_767.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
     
 }
 
