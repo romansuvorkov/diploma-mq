@@ -175,7 +175,7 @@ h2 {
 
 .number {
     font-weight: 700;
-    font-size: 14;
+    font-size: 14px;
 }
 
 .number::after {
@@ -478,9 +478,6 @@ footer .logo {
     }
     
     .players_img_wrapper {
-        display: flex;
-        position: absolute;
-        width: 100%;
         justify-content: flex-end;
     }
 
@@ -519,6 +516,11 @@ footer .logo {
     
     .number {
     font-size: 18px;
+    }
+    
+     .number::after {
+        width: 19px;
+        height: 5px;
     }
     
     .main_text {
@@ -588,20 +590,226 @@ footer .logo {
     }
     
     footer {
-    background-image: url("img/game_767.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
-    color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
+        background-image: url("img/game_767.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        color: #ffffff;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+    }
     
 }
+
+
+/*****************/
+/****Десктоп*****/
+/*****************/
+
+
+@media (min-width:961px) {
+    
+    .intro {
+        background-image: url("img/football_1920.jpg");
+    }
+
+    
+    .logo {
+        width: 191px;
+        padding-top: 45px;
+
+    }   
+
+    h1 {
+        font-size: 90px;
+        line-height: 90px;
+        margin-top: 295px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header_2nd_line {
+        margin-left: 452px;
+        margin-top: 27px;
+    }
+    
+    .header_1_wrapper {
+        display:flex;
+    }
+    
+    .shop_link_wrapper {
+        margin-top: 223px;
+        padding-bottom: 110px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .shop_link:nth-child(n+2) {
+        margin-top: 0;
+    }
+    
+    .shop_link {
+        font-size: 14px;
+        line-height: 20px;
+        min-height: 77px;
+        width: 311px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .shop_link_logo {
+        width: 40px;
+        height: 48px;
+        
+    }
+    
+    .athlets_img_wrapper {
+        justify-content: flex-end;
+        width: 50%;
+    }
+    
+    .athlet_img {
+        margin-top: 27px;
+        height: 950px;
+    }
+    
+    .athlets_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    
+    .athlets_connection_wrapper, .athlets_collaboration_wrapper, .athlets_growth_wrapper {
+        width: 100%;
+        padding-left: 52%;
+        padding-right: 10%;
+    }
+    
+    h2 {
+        font-size: 80px;
+        line-height: 80px;
+        font-weight: 700;
+        margin: 0;
+        padding-top: 117px;
+    }
+    
+    .header_number {
+        padding-top: 60px;
+    }
+    
+    .athlets_collaboration_wrapper .header_number, .players_growth_wrapper .header_number {
+        padding-top: 61px;
+}
+
+    .header_number h3 {
+        font-size: 36px;
+        line-height: 36px;
+    }
+    
+    .athlets_connection_wrapper .header_number, .players_connection_wrapper .header_number {
+        margin-top: 110px;
+    }
+    
+    .text {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    
+    .number {
+        font-size: 18px;
+    }
+    
+    .number::after {
+        width: 20px;
+        height: 5px;
+    }
+    
+    .players_wrapper {
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .players_img_wrapper {
+        width: 100%;
+        left: 50%;
+        justify-content: flex-start;
+    }
+    
+    .player_img {
+        margin-top: 27px;
+    }
+    
+    .players_connection_wrapper, .players_collaboration_wrapper, .players_growth_wrapper {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 50%;
+    }
+    
+    .center_span {
+        width: 168px;
+        height: 155px;
+        top: 28%;
+        right: -84px;
+        left: auto;
+        bottom: auto;
+    }
+    
+    .number {
+        font-size: 18px;
+    }
+    
+    .be_active, .find_contact, .work_it {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .img_wrapper {
+        width: 50%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .main_text {
+        width: 50%;
+    }
+    
+    .main_img {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    
+    main, section,  {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .find_contact .main_text {
+        order: 1;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
