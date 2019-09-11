@@ -1,24 +1,24 @@
 body {
     margin: 0;
-    font-family: Open Sans;
+    font-family: "Open Sans";
 }
 
 @font-face {
-    font-family: Open Sans;
+    font-family: "Open Sans";
     src: url("Fonts/OpenSans-Regular.woff");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: Open Sans;
+    font-family: "Open Sans";
     src: url("Fonts/OpenSans-Bold.woff");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: Open Sans;
+    font-family: "Open Sans";
     src: url("Fonts/OpenSans-Light.woff");
     font-weight: 100;
     font-style: normal;
@@ -325,6 +325,12 @@ footer::after {
     bottom: 0;
 }
 
+.footer_logo_header {
+    z-index: 1;
+    text-align: center;
+}
+
+
 .logo_background {
     display: flex;
     width: 72px;
@@ -352,15 +358,11 @@ footer h2 {
     display: block;
     font-size: 32px;
     line-height: 32px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .footer_span {
     z-index: 1;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     text-transform: uppercase;
     font-size: 14px;
     color: #9b8ec1;
@@ -589,19 +591,6 @@ footer .logo {
         font-weight: 100;
     }
     
-    footer {
-        background-image: url("img/game_767.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        position: relative;
-        color: #ffffff;
-        padding-left: 20px;
-        padding-right: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-    
 }
 
 
@@ -732,11 +721,12 @@ footer .logo {
         box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
+        overflow: hidden;
     }
     
     .players_img_wrapper {
         width: 100%;
-        left: 50%;
+        left: 45%;
         justify-content: flex-start;
     }
     
@@ -753,7 +743,7 @@ footer .logo {
     .center_span {
         width: 168px;
         height: 155px;
-        top: 28%;
+        top: 40%;
         right: -84px;
         left: auto;
         bottom: auto;
@@ -778,6 +768,17 @@ footer .logo {
     
     .main_text {
         width: 50%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 180px;
+        padding-right: 116px;
+        box-sizing: border-box;
+    }
+    
+    main .text {
+        padding-bottom: 0;
     }
     
     .main_img {
@@ -787,14 +788,86 @@ footer .logo {
         display: block;
     }
     
-    main, section,  {
-        max-width: 1600px;
+    main, section  {
+        max-width: 1920px;
         margin-left: auto;
         margin-right: auto;
     }
     
-    .find_contact .main_text {
-        order: 1;
+    .find_contact {
+        flex-direction: row-reverse;
+    }
+    
+    .find_contact .center_span {
+        left: -84px;
+        right: auto;
+    }
+    
+    main h2 {
+        font-size: 80px;
+        line-height: 80px;
+        padding-top: 0;
+    }
+    
+    main .text {
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 77px;
+    }
+    
+    footer {
+        background-image: url("img/game_1920.jpg");
+    }
+    
+    
+    .logo_background {
+        width: 130px;
+        height: 136px;
+        border-radius: 30px;
+    }
+    
+    .logo_footer {
+        width: 105px;
+        height: 87px;
+        
+    }
+    
+    .footer_logo_header {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+    
+    .logo_background {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 229px;
+    }
+    
+    .footer_header {
+        margin-top: 235px;
+        margin-left: 37px;
+    }
+    
+    .footer_header h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 80px;
+        line-height: 80px;
+    }
+    
+    .footer_span {
+        font-size: 30px;
+    }
+    
+    footer .shop_link_wrapper {
+        margin-top: 153px;
+    }
+    
+    footer .logo {
+        padding: 0;
+        margin-top: 262px;
+        margin-bottom: 52px;
     }
 
 
