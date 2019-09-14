@@ -105,7 +105,6 @@ h1 {
 
 .shop_link_logo {
     width: 22px;
-    height: 24px;
     fill: #ffffff;
 }
 
@@ -131,11 +130,11 @@ h2 {
 }
 
 .athlets_connection_wrapper h2 {
-    padding-top: 19px;            /*******PixelPerfect*******/
+    padding-top: 19px;            
 }
 
 .players_connection_wrapper h2 {
-    padding-top: 17px;            /*******PixelPerfect*******/
+    padding-top: 17px;            
 }
 
 .athlets_wrapper {
@@ -161,12 +160,12 @@ h2 {
 }
 
 .athlets_connection_wrapper .header_number {
-    margin-top: 317px;             /*******PixelPerfect вынесено отдельно значение*****/ 
-    padding-top: 0;                /********.players_connection_wrapper .header_number*******/
+    margin-top: 317px;             
+    padding-top: 0;                
 }
 
 .players_connection_wrapper .header_number {
-    margin-top: 315px;              /*******PixelPerfect*******/ 
+    margin-top: 315px;               
     padding-top: 0;
 }
 
@@ -275,6 +274,8 @@ h2 {
 .main_img {
     position: relative;
     width: 100%;
+    height: 100%;
+    background-color: aqua;
 }
 
 .img_wrapper {
@@ -370,12 +371,12 @@ footer::after {
 
 footer h2 {
     margin: 0;
-    margin-top: 57px;      /**PixelPerfect**/
+    margin-top: 57px;      
     z-index: 1;
     display: block;
     font-size: 32px;
     line-height: 32px;
-    padding-top: 0;       /**PixelPerfect**/
+    padding-top: 0;       
 }
 
 .footer_span {
@@ -404,6 +405,10 @@ footer .logo {
 
 @media (min-width:641px) and (max-width: 960px) {
     
+    .intro {
+    background-image: url("img/football_1280.jpg");
+}
+    
     .logo {
         padding-top: 39px;
         width: 204px;
@@ -412,7 +417,7 @@ footer .logo {
 
     h1 {
         font-size: 64px;
-        line-height: 66px;
+        line-height: 64px;
         margin-top: 170px;
     }
 
@@ -421,7 +426,7 @@ footer .logo {
     }
 
     .header_2nd_line {
-        margin-top: 32px;
+        margin-top: 19px;
         margin-left: 107px;
     }
 
@@ -429,11 +434,12 @@ footer .logo {
         margin-top: 313px;
         padding-bottom: 90px;
         display: flex;
-        justify-content: space-around;
+        justify-content: center; /******PixelPerfect****/
     }
     
     .shop_link:nth-child(n+2) {
         margin-top: 0;
+        margin-left: 25px;      /******PixelPerfect****/
     }
     
     .shop_link {
@@ -444,13 +450,14 @@ footer .logo {
         font-size: 14px;
         line-height: 15px;
         min-height: 77px;
-        width: 40%;
+        width: 43%;
+        justify-content: flex-start;
     }
 
     .shop_link_logo {
         width: 41px;
         height: 43px;
-        
+        margin-left: 30px;
     }
     
     .athlets_img_wrapper {
@@ -461,11 +468,21 @@ footer .logo {
         margin-top: 96px;
         display: block;
         height: 698px;
-        margin-left: -171px;
+        margin-left: -163px;
+    }
+    
+    h2 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+    
+    .header_number h3 {
+        font-size: 32px;
+        line-height: 32px;
     }
     
     .athlets_wrapper h2, .players_wrapper h2 {
-        margin-top: 86px;
+        margin-top: 73px;
         padding-top: 0;
     }
     
@@ -475,7 +492,7 @@ footer .logo {
     }
     
     .athlets_connection_wrapper .header_number, .players_connection_wrapper .header_number {
-        margin-top: 61px;
+        margin-top: 47px;
     }   
 
     .text {
@@ -483,9 +500,9 @@ footer .logo {
         line-height: 28px;
         text-align: left;
         padding: 0;
-        padding-bottom: 37px;
+        padding-bottom: 32px; /****PixelPerfect***/
         margin: 0;
-        margin-top: 30px;
+        margin-top: 23px;     /****PixelPerfect***/
     }   
     
     .athlets_collaboration_wrapper .header_number, .athlets_growth_wrapper .header_number {
@@ -511,11 +528,12 @@ footer .logo {
     
     .players_connection_wrapper, .players_collaboration_wrapper, .players_growth_wrapper  {
         padding-right: 355px;
+        padding-left: 30px;
     }
     
     .players_wrapper .text {
-        padding-bottom: 37px;
-        margin-top: 32px;
+        padding-bottom: 33px;
+        margin-top: 22px;
     }
     
     .players_collaboration_wrapper .header_number, .players_growth_wrapper .header_number {
@@ -525,30 +543,39 @@ footer .logo {
     .main_number_block {
         display: flex;
         background-color: #5e42b0;
-        width: 115px;
-        height: 115px;
+        width: 117px;
+        height: 117px;
         justify-content: center;
         align-items: center;
         position: absolute;
         left: 32px;
-        bottom: -35px;
+        transform: translateY(-73%);
+    }
+
+    main .number {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    
+    .header_number {
+        
     }
     
     .number {
-    font-size: 18px;
+        font-size: 18px;
+        line-height: 18px;
     }
     
      .number::after {
         width: 19px;
         height: 5px;
+         margin-top: 3px;
     }
     
     .main_text {
-        margin-top: 90px;
-    }
-    
-    .find_contact .main_text, .work_it .main_text  {
-        margin-top: 81px;
+        margin-top: 73px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     
     .be_active h2, .find_contact h2, .work_it h2 {
@@ -563,8 +590,8 @@ footer .logo {
     main .text {
         font-size: 24px;
         line-height: 28px;
-        margin-top: 37px;
-        padding-bottom: 105px;
+        margin-top: 24px;
+        padding-bottom: 100px;
     }
     
     .logo_background {
@@ -576,8 +603,8 @@ footer .logo {
         background: linear-gradient(to top, #50329c 0%, #5e3db3 51%, #7751db 100%);
         margin-left: auto;
         margin-right: auto;
-        margin-top: 99px;
-        border-radius: 15px;
+        margin-top: 126px;
+        border-radius: 30px;
     }
 
     .logo_footer {
@@ -591,22 +618,47 @@ footer .logo {
         font-size: 80px;
         line-height: 80px;
         text-align: center;
+        margin-top: 69px;
     }
     
     .footer_span {
         font-size: 36px;
         line-height: 36px;
-        margin-top: 29px;
+        margin-top: 15px;
         text-align: center;
+    }
+    
+    footer .shop_link_wrapper {
+        width: 100%;
+        margin-top: 285px;
     }
     
     footer .logo {
         margin-bottom: 10px;
-        margin-top: 23px;
+        margin-top: 15px;
     }
     
     .link_1st_line {
         font-weight: 100;
+        margin-left: 30px;
+    }
+    
+    .shop_link_logo {
+        margin-left: 35px;
+        width: 46px;
+    }
+    
+    .goolge_play_logo {
+        margin-left: 50px;
+    }
+    
+    .link_1st_line {
+        
+    }
+    
+    
+    footer {
+        background-image: url("img/game_1280.jpg");
     }
     
 }
@@ -633,14 +685,14 @@ footer .logo {
     h1 {
         font-size: 90px;
         line-height: 90px;
-        margin-top: 295px;
+        margin-top: 280px;
         margin-left: auto;
         margin-right: auto;
     }
 
     .header_2nd_line {
         margin-left: 452px;
-        margin-top: 27px;
+        margin-top: 0;
     }
     
     .header_1_wrapper {
@@ -648,7 +700,7 @@ footer .logo {
     }
     
     .shop_link_wrapper {
-        margin-top: 223px;
+        margin-top: 157px;
         padding-bottom: 110px;
         display: flex;
         justify-content: center;
@@ -665,12 +717,11 @@ footer .logo {
         width: 311px;
         margin-left: 25px;
         margin-right: 25px;
+        justify-content: flex-start;
     }
 
     .shop_link_logo {
         width: 40px;
-        height: 48px;
-        
     }
     
     .athlets_img_wrapper {
@@ -680,13 +731,17 @@ footer .logo {
     
     .athlet_img {
         margin-top: 27px;
-        height: 950px;
+        height: 900px;
     }
     
     .athlets_wrapper {
         display: flex;
         flex-wrap: wrap;
         position: relative;
+    }
+    
+    .athlets_connection_wrapper h2 {
+        padding-top: 103px;
     }
     
     .athlets_connection_wrapper, .athlets_collaboration_wrapper, .athlets_growth_wrapper {
@@ -700,8 +755,11 @@ footer .logo {
         line-height: 80px;
         font-weight: 700;
         margin: 0;
-        padding-top: 117px;
     }
+    
+    .athlets_growth_wrapper .header_number {
+        padding-top: 60px;
+}
     
     .header_number {
         padding-top: 60px;
@@ -717,7 +775,7 @@ footer .logo {
     }
     
     .athlets_connection_wrapper .header_number, .players_connection_wrapper .header_number {
-        margin-top: 110px;
+        margin-top: 95px;
     }
     
     .text {
@@ -744,12 +802,12 @@ footer .logo {
     
     .players_img_wrapper {
         width: 100%;
-        left: 45%;
+        left: 42%;
         justify-content: flex-start;
     }
     
     .player_img {
-        margin-top: 27px;
+        margin-top: 35px;
     }
     
     .players_connection_wrapper, .players_collaboration_wrapper, .players_growth_wrapper {
@@ -758,17 +816,24 @@ footer .logo {
         padding-right: 50%;
     }
     
+    .players_connection_wrapper h2 {
+        padding-top: 117px;
+    }
+    
+    .players_collaboration_wrapper .text {
+        padding-bottom: 98px;
+    }
     .main_number_block {
-        width: 168px;
-        height: 155px;
-        top: 40%;
+        width: 8.75vw;
+        height: 8.07vw;
+        top: 27%;
         transform: translateX(50%);
         right: 0;
         left: auto;
     }
     
     .number {
-        font-size: 18px;
+        font-size: 1.25vw;
     }
     
     .be_active, .find_contact, .work_it {
@@ -779,7 +844,6 @@ footer .logo {
     
     .img_wrapper {
         width: 50%;
-        max-width: 100%;
         margin: 0;
         padding: 0;
     }
@@ -787,16 +851,14 @@ footer .logo {
     .main_text {
         width: 50%;
         padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 180px;
-        padding-right: 116px;
+        padding-left: 6.71vw;
+        padding-right: 10.94vw;
         box-sizing: border-box;
     }
    
     .main_img {
         max-width: 100%;
+        width: 100%;
         margin: 0;
         padding: 0;
         display: block;
@@ -820,15 +882,25 @@ footer .logo {
     main h2 {
         font-size: 4.16vw;
         line-height: 4.16vw;
-        padding-top: 0;
+        padding-top: 12.5vw;
     }
     
     main .text {
-        font-size: 24px;
-        line-height: 28px;
-        margin-top: 77px;
+        font-size: 1.25vw;
+        line-height: 1.46vw;
+        margin-top: 5.31vw;
         padding-bottom: 0;
     }
+    
+    .find_contact .main_text {
+        padding-left: 10vw;
+        padding-right: 6.72vw;
+    }
+    
+    .find_contact .text {
+        margin-top: 60px;
+    }
+    
     
     footer {
         background-image: url("img/game_1920.jpg");
@@ -856,11 +928,11 @@ footer .logo {
     .logo_background {
         margin-left: 0;
         margin-right: 0;
-        margin-top: 229px;
+        margin-top: 219px;
     }
     
     .footer_header {
-        margin-top: 235px;
+        margin-top: 225px;
         margin-left: 37px;
     }
     
@@ -883,6 +955,23 @@ footer .logo {
         padding: 0;
         margin-top: 262px;
         margin-bottom: 52px;
+    }
+    
+    .shop_link_logo {
+        margin-left: 35px;
+        width: 46px;
+    }
+    
+    .goolge_play_logo {
+        margin-left: 50px;
+    }
+    
+    .link_1st_line {
+        margin-left: 30px;
+    }
+    
+    footer {
+        background-image: url("img/game_1920.jpg");
     }
 
 
